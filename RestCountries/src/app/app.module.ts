@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import {GoogleChart} from './angular2-google-chart.directive';
 import { ModalModule } from 'ngx-bootstrap';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
@@ -42,7 +43,7 @@ import { ModalModule } from 'ngx-bootstrap';
       {path:'SingleCountry', component:SingleCountryComponent}
     ])
   ],
-  providers: [RestService,HttpModule],
+  providers: [RestService,HttpModule{provide:LocationStrategy,useClass:HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 
