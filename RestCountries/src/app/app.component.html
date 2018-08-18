@@ -1,0 +1,87 @@
+
+ <style>
+		.my-list li { 
+	}
+	.my-list li.different-bg {
+		   background-color: orange;
+	}
+	.my-list li.different-bg1 {
+		   background-color: #D1E231;
+	}
+	.my-list li.different-bg2 {
+		  background-color: #98FB98;
+	}
+	.my-list li.different-bg3 {
+		   background-color: cyan;
+	}
+	.my-list li.different-bg4 {
+		   background-color: pink;
+	}
+	.my-list li.different-bg5 {
+		   background-color: violet; 
+	}
+	.my-list li.different-bg6 {
+		   background-color: purple
+	}
+	.my-list li.different-bg7 {
+		   background-color: brown;
+	}
+	.my-list li.different-bg8 {
+		   background-color: orange; 
+	}
+	.my-list li.different-bg9 {
+		   background-color: red; 
+	}
+	
+	.mychart{
+		width: 89vw; height: 84vh;
+	}
+	
+	.mystyle1{
+	  font-family: 'IBM Plex Sans', sans-serif;
+	  display:block;
+	  text-align: center
+	}
+	
+	.mystyle2{
+	  font-family: 'Kosugi', sans-serif;
+	}
+	  </style>
+
+<div class="container-fluid  ">
+	<nav class=" navbar navbar-expand-lg  navbar-light bg-dark ">
+		<a class="navbar-brand text-light" [routerLink]="['']">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+		 aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<!>	<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active mx-5">
+						<a class="nav-link" ></a>
+					</li>
+					<li class="nav-item active mx-5">
+							<a class="nav-link" ></a>
+						</li>
+					<li class="nav-item">
+							<li class="nav-item active mx-5">
+									<a class="nav-link" ></a>
+								</li>
+								<li class="nav-item active mx-5">
+										<a class="nav-link" ></a>
+									</li>
+								
+										
+							<li class="nav-item">
+					 <a class="nav-link mystyle1 text-light mx-5" > The World</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#"></a>
+					</li>
+				</ul>
+			
+	
+	</div>
+	</nav>
+		
+<router-outlet></router-outlet>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RestCountries</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:600i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kosugi" rel="stylesheet">
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+ crossorigin="anonymous">
+  
+  <script>  
+      // !important: You want to give this variable(var googleLoaded = false;). This is used to run multiple chart in your jade.
+      var googleLoaded = false;
+      // !important: Define which chart packages to preload.Because this package uses ChartWrappers you can use any chart type that Google supports, but if it // isn't loaded it will load it on demand. 
+      var googleChartsPackagesToLoad = ['geochart'];
+      
+  </script>
+
+  <style>
+    .mypage{
+    overflow-x:hidden;
+    }
+  </style>
+</head>
+
+
+<body class="mypage">
+  <app-root></app-root>
+</body>
+</html>
